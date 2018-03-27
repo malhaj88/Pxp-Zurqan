@@ -1,0 +1,72 @@
+aspire:  
+  webdriver:
+     scope: 
+  
+  dashboard:
+     integration:
+      enabled: true
+      host: 82.212.71.230
+      port: 5080
+      path: api
+      protocol: http
+      logLevel: FULL
+      projectId: 30 
+          
+  jbehave:
+    meta-data:
+    - -s2 
+    thread: 1
+    story-time-out: 3000 
+    rerun: 1 
+    softassert: 
+      enabled: true 
+    stories:
+      defaultloader:
+        enabled: true   
+        include: 
+         # - stories/02-HomePage/TC-002**.story
+         # - stories/**/TC-001-Login.story
+         # - stories/01-login/**.story
+          - stories/**/TC-002-CheckForDuplicateManuscripts.story
+          
+         # - stories/11-Reviewers/TC-**.story
+     
+          
+        
+  screenshot:
+    enabled: true
+    only-on-failure: true
+    filesaver:
+      enabled: true
+      folder-location: ./screenshots/
+
+spring:
+  output:
+    ansi:
+      enabled: always  
+logging:
+  level: 
+    com:
+      aspire: DEBUG
+  file: application_zurqan.log  
+
+
+endpoints:
+  beans:
+    sensitive: false
+  shutdown:
+    enabled: true
+  env:
+    sensitive: false
+    
+    
+server:
+  port: 0
+
+
+
+
+
+
+
+   

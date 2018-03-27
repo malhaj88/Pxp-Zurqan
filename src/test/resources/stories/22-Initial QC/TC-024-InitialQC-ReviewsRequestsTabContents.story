@@ -1,0 +1,10 @@
+Scenario: TC-024 -Initial QC-Verify the existence of "Reviews/Review Requests" tab contents of "Signed in User name" page
+
+Given I am on login page
+When I enter staff_User_Name username and Valid_Password password
+And I click on  Initial_QC
+And I click the initial QC Manuscript
+And I click on QC_HeaderTableUserName
+And I switch tabs
+And I click on Reviews_Requests
+Then The Reviews_Requests_Table should display

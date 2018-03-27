@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.aspire.kargo</groupId>
+	<artifactId>aspire-automation-kargo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>aspire-automation-kargo</name>
+	<description>Kargo Automation Project</description>
+
+	<!-- <parent> <groupId>com.aspire</groupId> <artifactId>automation-dependencies</artifactId> 
+		<version>1.0.0-SNAPSHOT</version> </parent> -->
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<main.basedir>..</main.basedir>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency> 
+				<groupId>com.github.AspireInfotech</groupId>
+				<artifactId>Automation-Dependencies</artifactId>
+				<version>1.0.9.3-ALPHA</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-parent</artifactId> 
+				<version>1.5.6.RELEASE</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Dalston.SR3</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- <dependency> <groupId>com.aspire</groupId> <artifactId>aspire-automation-autoconfiguration</artifactId> 
+			<version>0.0.4-SNAPSHOT</version> </dependency> -->
+
+      <dependency> 
+        <groupId>com.github.AspireInfotech</groupId>
+        <artifactId>Aspire-Automation-Core</artifactId>
+      </dependency>
+      <dependency> 
+        <groupId>com.github.AspireInfotech</groupId> 
+        <artifactId>Aspire-Automation-Reporting-Backend</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>com.github.AspireInfotech</groupId>
+        <artifactId>Automation-Web-Util</artifactId>
+      </dependency>
+		<dependency>
+			<groupId>org.jbehave</groupId>
+			<artifactId>jbehave-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjtools</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.jmnarloch</groupId>
+			<artifactId>rxjava-spring-boot-starter</artifactId>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.jbehave.web</groupId>
+			<artifactId>jbehave-web-selenium</artifactId>
+		</dependency>
+
+		<!-- <dependency> <groupId>com.github.AspireInfotech</groupId> <artifactId>Automation-Util</artifactId> 
+			<version>v4.2.4</version> </dependency> -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jbehave</groupId>
+			<artifactId>jbehave-spring</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+
+
+
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+
+
+
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>htmlunit-driver</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<version>1.5.7.RELEASE</version>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>1.5.6.RELEASE</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+	<!-- <distributionManagement> <repository> <id>libs-snapshot-local</id> 
+		<name>libs-snapshot-local</name> <url>http://localhost:8081/artifactory/libs-snapshot-local/</url> 
+		</repository> </distributionManagement> -->
+	<!-- <profiles> <profile> <repositories> <repository> <id>central</id> <url>http://localhost:8081/artifactory/libs-release-local</url> 
+		<snapshots> <enabled>false</enabled> </snapshots> </repository> <repository> 
+		<id>snapshots</id> <url>http://localhost:8081/artifactory/libs-snapshot-local</url> 
+		<releases> <enabled>false</enabled> </releases> </repository> </repositories> 
+		</profile> </profiles> -->
+</project>

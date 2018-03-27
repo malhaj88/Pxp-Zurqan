@@ -1,0 +1,55 @@
+aspire:  
+  jbehave:
+    metat-data:
+    - -s2 
+    thread: 1
+    story-time-out: 3000 
+    rerun: 0 
+    softassert: 
+      enabled: true 
+    stories:
+      defaultloader:
+        enabled: true   
+        include: 
+         - stories/**/**login-001.story
+          - stories/**/TC-specificPublisher-001.story
+         
+
+        
+        
+  screenshot:
+    enabled: false
+    filesaver:
+      enabled: true
+      folder-location: ./screenshots/
+
+spring:
+  output:
+    ansi:
+      enabled: always  
+logging:
+  level: 
+    com:
+      aspire: DEBUG
+  file: application_zurqan.log  
+
+
+endpoints:
+  beans:
+    sensitive: false
+  shutdown:
+    enabled: true
+  env:
+    sensitive: false
+    
+    
+server:
+  port: 9090
+
+
+
+      
+
+
+
+   

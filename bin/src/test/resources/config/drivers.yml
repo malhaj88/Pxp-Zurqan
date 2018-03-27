@@ -1,0 +1,200 @@
+aspire: 
+  webdriver:
+    chrome:
+      enabled: false
+      name: chrome
+      mobile: false
+      remote:
+        enabled: false
+        url: https://omaraspire1:psaTpDqUXqS7py41dYjT@hub-cloud.browserstack.com/wd/hub
+        type: saucelab
+      local:
+        security-test: false
+        proxy:
+          enabled: false
+          port: 8080
+          proxy-host: 10.200.150.14
+ 
+      capabilities:
+        browser : chrome
+        browser_version : 58.0
+        os : OS X
+        os_version: Sierra
+        project : WEB ASPIRE TEMPLATE TEST
+        acceptSslCerts : true
+        browserstack.debug : true
+      preferences:
+        profile.default_content_settings.popups : 0
+        profile.default_content_setting_values.notifications : 2
+        download.default_directory : ${user.dir}/Temp   
+      arguments:
+      - start-maximized
+      - disable-popup-blocking
+      - test-type
+      - --disable-extensions
+       
+    firefox:
+      enabled: true
+      name: firefox
+      mobile: false
+      remote:
+        enabled: false
+        url: https://omaraspire1:psaTpDqUXqS7py41dYjT@hub-cloud.browserstack.com/wd/hub
+        type: saucelab
+      local:
+        security-test: false
+        proxy:
+          enabled: false
+          port: 8080
+          proxy-host: 10.200.150.14
+ 
+      capabilities:
+        browser : firefox
+        browser_version : 53.0
+        os : OS X
+        os_version: El Capitan
+        project : WEB ASPIRE TEMPLATE TEST
+        acceptSslCerts : true
+        browserstack.debug : true
+      preferences:
+        profile.default_content_settings.popups : 0
+        profile.default_content_setting_values.notifications : 2
+      arguments:
+      - start-maximized
+      - disable-popup-blocking
+      - test-type
+      - --disable-extensions 
+    safri: 
+      enabled: false
+      name: safari
+      mobile: false
+      remote:
+        enabled: false
+        url: https://omaraspire1:psaTpDqUXqS7py41dYjT@hub-cloud.browserstack.com/wd/hub
+        type: saucelab
+      local:
+        security-test: false
+        proxy:
+          enabled: false
+          port: 8080
+          proxy-host: 10.200.150.14
+ 
+      capabilities:
+        browser : safari
+        browser_version : 47.0
+        os : OS X
+        os_version: El Capitan
+        project : WEB ASPIRE TEMPLATE TEST
+        acceptSslCerts : true
+        browserstack.debug : true
+      preferences:
+        profile.default_content_settings.popups : 0
+        profile.default_content_setting_values.notifications : 2
+      arguments:
+      - start-maximized
+      - disable-popup-blocking
+      - test-type
+      - --disable-extensions    
+    opera: 
+      enabled: false
+      name: opera
+      mobile: false
+      remote:
+        enabled: false
+        url: https://omaraspire1:psaTpDqUXqS7py41dYjT@hub-cloud.browserstack.com/wd/hub
+        type: saucelab
+      local:
+        security-test: false
+        proxy:
+          enabled: false
+          port: 8080
+          proxy-host: 10.200.150.14
+ 
+      capabilities:
+        browser : opera
+        browser_version : 12.6
+        os : OS X
+        os_version: El Capitan
+        project : WEB ASPIRE TEMPLATE TEST
+        acceptSslCerts : true
+        browserstack.debug : true
+      preferences:
+        profile.default_content_settings.popups : 0
+        profile.default_content_setting_values.notifications : 2
+      arguments:
+      - start-maximized
+      - disable-popup-blocking
+      - test-type
+      - --disable-extensions     
+    ie: 
+      enabled: false
+      name: ie32
+      processor: processor-32
+      mobile: false
+      remote:
+        enabled: false
+        url: https://omaraspire1:psaTpDqUXqS7py41dYjT@hub-cloud.browserstack.com/wd/hub
+        type: saucelab
+      local:
+        security-test: false
+        proxy:
+          enabled: false
+          port: 8080
+          proxy-host: 10.200.150.14
+ 
+      capabilities:
+        browser : ie
+        browser_version : 58.0
+        os : OS X
+        os_version: Sierra
+        project : WEB ASPIRE TEMPLATE TEST
+        acceptSslCerts : true
+        browserstack.debug : true
+      preferences:
+        profile.default_content_settings.popups : 0
+        profile.default_content_setting_values.notifications : 2
+        download.default_directory : /Users/malzurqan/Documents/Temp 
+      arguments:
+      - start-maximized
+      - disable-popup-blocking
+      - test-type
+      - --disable-extensions  
+    edge: 
+      enabled: false
+      name: edge
+      mobile: false
+      remote:
+        enabled: false
+        url: https://omaraspire1:psaTpDqUXqS7py41dYjT@hub-cloud.browserstack.com/wd/hub
+        type: saucelab
+      local:
+        security-test: false
+        proxy:
+          enabled: false
+          port: 8080
+          proxy-host: 10.200.150.14
+ 
+      capabilities:
+        browser : edge
+        browser_version : 58.0
+        os : OS X
+        os_version: Sierra
+        project : WEB ASPIRE TEMPLATE TEST
+        acceptSslCerts : true
+        browserstack.debug : true
+      preferences:
+        profile.default_content_settings.popups : 0
+        profile.default_content_setting_values.notifications : 2
+        download.default_directory : /Users/malzurqan/Documents/Temp 
+      arguments:
+      - start-maximized
+      - disable-popup-blocking
+      - test-type
+      - --disable-extensions       
+ 
+   
+      
+
+
+
+   
