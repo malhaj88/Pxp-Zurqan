@@ -1510,14 +1510,14 @@ public interface Author {
 	@CssSelector("${pages.author.potential_Reviewer_Name}")
 	public AspireWebElement potential_Reviewer_Name();
 
-	@CssSelector("${pages.author.Search_Btn_Potential_Reviewer}")
-	public AspireWebElement Search_Btn_Potential_Reviewer();
+	@CssSelector("${pages.author.search_Btn_Potential_Reviewer}")
+	public AspireWebElement search_Btn_Potential_Reviewer();
 
 	@CssSelector("${pages.author.potential_Reviewer_Check_Box}")
 	public AspireWebElement potential_Reviewer_Check_Box();
 
-	@CssSelector("${pages.author.Assign_Potential_Reviewer_Btn}")
-	public AspireWebElement Assign_Potential_Reviewer_Btn();
+	@CssSelector("${pages.author.assign_Potential_Reviewer_Btn}")
+	public AspireWebElement assign_Potential_Reviewer_Btn();
 
 	@CssSelector("${pages.author.done_Finished_Btn}")
 	public AspireWebElement done_Finished_Btn();
@@ -1621,8 +1621,8 @@ public interface Author {
 	@CssSelector("${pages.author.yes_List}")
 	public AspireWebElement yes_List();
 
-	@CssSelector("${pages.author.no_Lis}")
-	public AspireWebElement no_Lis();
+	@CssSelector("${pages.author.no_List}")
+	public AspireWebElement no_List();
 
 	@CssSelector("${pages.author.first_Option_Yes}")
 	public AspireWebElement first_Option_Yes();
@@ -1805,11 +1805,11 @@ public interface Author {
 	@CssSelector("${pages.author.return_Main_Page}")
 	public AspireWebElement return_Main_Page();
 
-	@CssSelector("${pages.author.check_MS_Status}")
-	public AspireWebElement check_MS_Status();
+	@CssSelector("${pages.author.check_Ms_Status}")
+	public AspireWebElement check_Ms_Status();
 
-	@CssSelector("${pages.author.ms_ID}")
-	public AspireWebElement ms_ID();
+	@CssSelector("${pages.author.ms_Id}")
+	public AspireWebElement ms_Id();
 
 	@CssSelector("${pages.author.search_Btn}")
 	public AspireWebElement search_Btn();
@@ -3318,5 +3318,13 @@ public interface Author {
 	@CssSelector("${pages.author.check_Close_Window}")
 	public AspireWebElement check_Close_Window();
 	
+	@CssSelector("${pages.author.assign_Associate_Editor_Text}")
+	public AspireWebElements assign_Associate_Editor_Text();
+	
+	@CssSelector("${pages.author.after_Assign_Associate_Editor_Text}")
+	public AspireWebElement after_Assign_Associate_Editor_Text();
+	
+	@CssSelector("${pages.author.assign_Potential_Reviewers_Text}")
+	public AspireWebElements assign_Potential_Reviewers_Text();
 	
 }

@@ -14,11 +14,11 @@ And [1111-1080] Initial_QC_First_MS should be displayed, Within 20 seconds
 And [1101-0183] the user saves its text in story scope under name Initial_QC_Used
 And [1111-1000] Initial_QC_First_MS should be clickable, Within 20 seconds
 And [1100-0300] User click on it
-And [1111-1000] Task_tab should be clickable, Within 20 seconds
+And [1111-1000] Task_Tab should be clickable, Within 20 seconds
 And [1100-0300] User click on it
 !-- Finished click the initial QC Manuscript
 And [1111-1000] Pass_Remaining_Items_Btn should be clickable, Within 20 seconds
 And [1100-0300] User click on it
 And [1111-1000] Quality_Ok_btn should be clickable, Within 20 seconds
 And [1100-0300] User click on it
-Then [1111-1130] Initial_QC_complete_Msg text should contain Initial QC complete., Within 20 seconds
+Then [1111-1130] initial_QC_Complete_Msg text should contain Initial QC complete., Within 20 seconds

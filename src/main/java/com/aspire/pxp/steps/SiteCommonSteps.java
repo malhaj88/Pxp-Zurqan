@@ -70,16 +70,16 @@ public class SiteCommonSteps {
 	//
 	// }
 
-//	@When("[8101-0004] User Accepts dialog")
-//	@Then("[8101-0004] User Accepts dialog")
-//	public void acceptsDialog() {
-//		try {
-//			AspireBrowser.getLastAccessedPage().alert().accept();
-//		} catch (NoAlertPresentException e) {
-//			e.printStackTrace();
-//		}
-//
-//	}
+	@When("[8101-0004] User Accepts dialog")
+	@Then("[8101-0004] User Accepts dialog")
+	public void acceptsDialog() {
+		try {
+			AspireBrowser.getLastAccessedPage().alert().accept();
+		} catch (NoAlertPresentException e) {
+			e.printStackTrace();
+		}
+
+	}
 //
 //	@When("[8101-0034] User searchs for manuscript as staff")
 //	@Then("[8101-0034] User searchs for manuscript as staff")

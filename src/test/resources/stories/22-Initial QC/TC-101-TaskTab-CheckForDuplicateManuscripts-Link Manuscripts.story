@@ -1,14 +1,29 @@
 Scenario: TC-101- Initial QC-Task Tab - Check for Duplicate MS - Link Manuscripts
 
-Given I am on login page
-When I enter staff_User_Name username and Valid_Password password
-And I click on  Initial_QC
-And I click the initial QC Manuscript
-And I click on Check_Duplicate
-And I switch tabs
-And I click on Link_Manuscripts
-Then The First_Manuscript should display
-And The Link_Note should display
-And The Link_return_MS_btn should display
-And The Link_return_HP_btn should display
-And The Cancel_btn should display
+Given [1000-9000] User opens Login page
+When [1000-3000] User maximize browser window
+And [1111-1080] User Name should be displayed, Within 20 seconds
+And [1100-1340] User fills User Name with `staff User Name`
+And [1100-1340] User fills Password with `Valid Password`
+And [1111-1000] Login Button should be clickable, Within 20 seconds
+And [1100-0300] User click on it
+And [1111-1000] Initial_QC should be clickable, Within 20 seconds
+And [1100-0300] User click on it
+!-- I click the initial QC Manuscript
+And [1111-1030] Initial_Qc_First_Ms should be presence, Within 20 seconds
+And [1101-0183] the user saves its text in story scope under name Initial_QC_Used
+And [1111-1000] Initial_Qc_First_Ms should be clickable, Within 20 seconds
+And [1100-0300] User click on it
+And [1111-1000] Task_Tab should be clickable, Within 20 seconds
+And [1100-0300] User click on it
+!-- Finished click the initial QC Manuscript
+And [1111-1000] Check_Duplicate should be clickable, Within 20 seconds
+And [1100-0300] User click on it
+And [1000-4000] User switches to tab 1
+And [1111-1000] Link_Manuscripts should be clickable, Within 20 seconds
+And [1100-0300] User click on it
+Then [1111-1080] First_Manuscript should be displayed, Within 20 seconds
+And [1111-1080] Link_Note should be displayed, Within 20 seconds
+And [1111-1080] Link_Return_Ms_Btn should be displayed, Within 20 seconds
+And [1111-1080] Link_Return_Hp_Btn should be displayed, Within 20 seconds
+And [1111-1080] Cancel_Btn should be displayed, Within 20 seconds
